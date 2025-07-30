@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="script.js"></script>
+    <style>
+      /* .body {
+        background-color: #552ead;
+      } */
+
+      /* .myDiv {
+        padding-bottom: 140px;
+        padding-top: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 20px;
+      } */
+
+      /* .myHead {
+        font-family: serif;
+        font-weight: bolder;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: rgb(69, 15, 110);
+      } */
+
+      /* .myIcon {
+        display: flex;
+        align-items: right;
+        size: 100px;
+      } */
+
+      /* .myInput {
+        width: 370px;
+        height: 45px;
+        border: 1px solid wheat;
+        border-radius: 13px;
+      } */
+
+      /* ::placeholder {
+        color: rgb(69, 15, 110);
+        padding-left: 15px;
+        font-family: arial;
+      } */
+
+      /* .myP {
+        color: rgb(110, 51, 154);
+        text-align: center;
+        font-family: arial;
+        font-weight: bold;
+      } */
+
+      /* .logBtn {
+        border: 3px solid;
+        border-radius: 23px;
+        padding: 11px;
+        width: 50vw;
+        background-color: #552ead;
+        color: whitesmoke;
+        font-size: 15px;
+      } */
+
+
+
+
+      
+    </style>
+
+    
+  </head>
+
+
+  <body class="bg-[#5932b1] min-h-screen flex justify-center items-center">
+  <div
+    class="bg-[#ebe9f6] border border-solid rounded-[20px] px-4 py-6 w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%]"
+  >
+    <form action="/" method="get" id="form"> 
+      <div class="flex items-center justify-between mb-6">
+        <h1
+          class="font-bold text-[20px] sm:text-[24px] text-[rgb(69,15,110)] font-sans"
+        >
+          Log in
+        </h1>
+
+        <img
+          src="/images/closeIcon.png"
+          alt="cancel icon"
+          class="w-[20px] h-[20px] cursor-pointer hover:outline-2 hover:rounded-full hover:bg-[purple] hover:outline-blue-600"
+        />
+      </div>
+
+      <input
+        type="email"
+        class="w-full bg-white rounded-xl px-4 py-3 shadow-md text-gray-700 placeholder:text-gray-400 outline-none placeholder:text-[rgb(69,15,110)] placeholder:font-sans mb-4"
+        placeholder="E-mail"
+      name="email" required/>
+      <span id="error"></span>
+      <!-- <span class="email-error text-red text-right"></span> -->
+
+      <input
+        type="password"
+        id="password-input"
+        class="w-full bg-white rounded-xl px-4 py-3 shadow-md text-gray-700 outline-none text-[rgb(69,15,110)] placeholder:font-sans mb-4"
+        placeholder="Password" name="password" required
+      />
+      <span id="error2"></span>
+       <!-- <span class="password-error text-red text-right"></span> -->
+
+
+      <p class="text-[rgb(110,51,154)] text-center font-sans font-bold mb-6">
+        Forgot Your Password
+      </p>
+
+      <button
+        class="block mx-auto border-[3px] rounded-[23px] py-[11px] w-full sm:w-[70%] md:w-[50%] lg:w-[40%] bg-[#552ead] text-[whitesmoke] text-[15px]"
+     type="submit" >
+        Login
+      </button>
+
+      <p class="mt-8 text-[rgb(110,51,154)] text-center font-sans font-bold">
+        Already have an account? Sign up
+      </p>
+    </form>
+  </div>
+</body>
+
+
+    <!-- <script>
+      function validateMyForm(){
+        event.preventDefault();
+
+        validateMyForm('E-mail')
+        validateMyForm('Password')
+      }
+
+      function validateMyForm(input){
+        inputElement = document.getElementById(input + '-input').value
+         if (inputElement === '') {
+         document.getElementById(input +'-error').innerHTML = input + " is compulsory"
+          }
+      }
+
+    </script> -->
+  </body>
+</html>
